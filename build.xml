@@ -1,0 +1,46 @@
+<project>
+    <target name="clean">
+        <delete dir="classes/baba"/>
+        <delete dir="classes/fr"/>
+        <delete dir="docs/doc"/>
+    </target>
+
+    <property name="separator" value="${path.separator}"/>
+
+    <property name="class-path" value="lib/zen5.jar${separator}classes baba.main.Main" />
+
+    <path id="classpath">
+        <pathelement location="lib/zen5.jar"/>
+    </path>
+
+    <target name="compile">
+        <javac srcdir="src" debug="true" destdir="classes" classpathref="classpath">
+            <compilerarg line="--enable-preview --release 15" />
+            <classpath>
+                <path refid="classpath" />
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="jar">
+        <jar destfile="baba.jar" basedir="classes">
+            <manifest>
+                <attribute name="Main-Class" value="baba.main.Main"/>
+                <attribute name="Class-Path" value="${class-path}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <exec executable="java">
+        <arg line="--enable-preview -cp ${class-path} -jar baba.jar" />
+        </exec>
+    </target>
+
+    <target name="doc" description="generate documentation">
+        <mkdir dir="docs/doc"/>
+        <javadoc sourcepath="src" destdir="docs/doc">
+            <arg line=" -cp ${class-path} --enable-preview --release 15" />
+        </javadoc>
+    </target>
+</project>

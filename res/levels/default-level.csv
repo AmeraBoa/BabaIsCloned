@@ -1,0 +1,16 @@
+32,18,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,BABA,IS,YOU,,,,,,FLAG,IS,WIN
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL
+,,,,,,,,,,,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_ROCK,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE
+,,,,,,,,,,,OBJ_TILE,OBJ_BABA,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_ROCK,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_FLAG,OBJ_TILE
+,,,,,,,,,,,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_ROCK,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE,OBJ_TILE
+,,,,,,,,,,,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL,OBJ_WALL
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,WALL,IS,STOP,,,,,,ROCK,IS,PUSH
