@@ -1,8 +1,8 @@
 <project>
     <target name="clean">
-        <delete dir="classes/baba"/>
-        <delete dir="classes/fr"/>
+        <delete dir="classes"/>
         <delete dir="docs/doc"/>
+        <delete file="baba.jar"/>
     </target>
 
     <property name="separator" value="${path.separator}"/>
@@ -14,8 +14,9 @@
     </path>
 
     <target name="compile">
+        <mkdir dir="classes"/>
         <javac srcdir="src" debug="true" destdir="classes" classpathref="classpath">
-            <compilerarg line="--enable-preview --release 15" />
+            <compilerarg/>
             <classpath>
                 <path refid="classpath" />
             </classpath>
@@ -38,8 +39,8 @@
     </target>
 
     <target name="doc" description="generate documentation">
-        <mkdir dir="docs/doc"/>
-        <javadoc sourcepath="src" destdir="docs/doc">
+        <mkdir dir="docs"/>
+        <javadoc sourcepath="src" destdir="docs">
             <arg line=" -cp ${class-path} --enable-preview --release 15" />
         </javadoc>
     </target>
