@@ -1,7 +1,7 @@
 <project>
     <target name="clean">
         <delete dir="classes"/>
-        <delete dir="docs/doc"/>
+        <delete dir="doc"/>
         <delete file="baba.jar"/>
     </target>
 
@@ -34,13 +34,13 @@
 
     <target name="run" depends="jar">
         <exec executable="java">
-        <arg line="--enable-preview -cp ${class-path} -jar baba.jar" />
+        <arg line="-cp ${class-path} -jar baba.jar" />
         </exec>
     </target>
 
     <target name="doc" description="generate documentation">
-        <mkdir dir="docs"/>
-        <javadoc sourcepath="src" destdir="docs">
+        <mkdir dir="doc"/>
+        <javadoc sourcepath="src" destdir="doc">
             <arg line=" -cp ${class-path}" />
         </javadoc>
     </target>
