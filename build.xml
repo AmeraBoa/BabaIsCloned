@@ -41,7 +41,7 @@
     <target name="doc" description="generate documentation">
         <mkdir dir="docs"/>
         <javadoc sourcepath="src" destdir="docs">
-            <arg line=" -cp ${class-path} --enable-preview --release 15" />
+            <arg line=" -cp ${class-path}" />
         </javadoc>
     </target>
 </project>
